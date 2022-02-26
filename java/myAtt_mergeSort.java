@@ -1,4 +1,5 @@
-public class mergeSort{
+//all wrong
+public class myAtt_mergeSort{
 	/*
 	first attempt at mergesort before watching the video
 	*/
