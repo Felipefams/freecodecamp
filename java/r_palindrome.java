@@ -1,12 +1,12 @@
 public class r_palindrome{
 	public static boolean isPalindrome(String s){
 	//caso base/condicao de parada
-		if(input.length() == 0 || input.length() ==1){
+		if(s.length() == 0 || s.length() ==1){
 			return true;
 		}
 	//motor da recursao	
-		if(input.charAt(0) == input.charAt(input.lenght() - 1)){
-			return isPalindrome(input.substring(1, input.length() - 1));
+		if(s.charAt(0) == s.charAt(s.length() - 1)){
+			return isPalindrome(s.substring(1, s.length() - 1));
 		}	
 		return false;
 	}
