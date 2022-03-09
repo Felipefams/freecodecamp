@@ -1,2 +1,2 @@
-# freecodecamp-recursion
-repository for the freecodecamp recursion class problems
+# freecodecamp
+repository for the freecodecamp classes problems
