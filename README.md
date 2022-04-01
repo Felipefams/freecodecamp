@@ -1,2 +1,2 @@
 # freecodecamp
-repository for the freecodecamp classes problems
+repository for all i learn using freecodecamp, my anotations, codes, etc.
