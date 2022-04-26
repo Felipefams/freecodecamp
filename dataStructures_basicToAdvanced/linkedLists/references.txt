@@ -1,0 +1,47 @@
+//for a better reference, check github.com/williamfiset/Algorithms
+// and find the linked lists explanation there
+
+Where are linkedLists used?
+--> they are used in many list, queue & stack implementations,
+due to their great time complexity for inserting and removing
+elements.
+
+--> circular lists, since we can just make the last node point
+to the first node, instead of pointing to null.
+
+--> can easily model real world objects such as trains
+
+//more advance, no need to bother with these rn
+--> used in separete chaining, which is present in certain
+Hashtable implementations to deal with hashing collisions
+
+--> ofter used in the implementation of adjacency lists for graphs
+
+//-----------------------------------------
+//english terms
+
+[x]----->[x]----->[x]----->[x]----->[x]----->[x]
+ ^      		^			^				  ^ 
+head	     pointer       node				 tail 
+
+# Head: The first node in a linked list
+# Tail: The last node in a linked list 
+# Pointer: Reference to another node
+# Node : An object containing data and pointers
+the tail points to null
+
+//------------------------------------------
+//Tradeoff between a doubly linked and singly linked lists
+______________________________________________________________
+		| 			PROS		   |		   CONS			  |	
+________|__________________________|__________________________|
+		|						   |						  |
+	  	| uses less memory		   |	Cannot easily access  |
+Singly	|						   |	previous elements	  |
+Linked	| simpler implementation   |						  |
+________|__________________________|__________________________|
+	  	|						   |						  |
+Doubly	| can be traversed		   |	takes 2x memory		  |
+Linked	| backwards				   |						  |
+________|__________________________|__________________________|
+
