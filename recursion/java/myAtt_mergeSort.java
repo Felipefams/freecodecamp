@@ -20,7 +20,7 @@ public class myAtt_mergeSort{
 		}
 		if(array.length > 2){
 		//	here i should find a way to concatenate the two arrays
-			return mergeSort(array, left, mid - 1) + mergeSort(array, mid + 1, right);	
+			return mergeSort(array, left, mid - 1);// + mergeSort(array, mid + 1, right);
 		}
 		return array;		
 	} 

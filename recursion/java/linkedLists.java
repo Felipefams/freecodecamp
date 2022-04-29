@@ -19,7 +19,7 @@ public class linkedLists{
 		if(node == null || node.next == null) return node;
 		Node p = reverseList(node.next);
 		node.next.next = node;
-		node.next = null;
+		node.next = null; //remove the pointer
 		return p;
 	}
 
