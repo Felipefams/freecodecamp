@@ -1,9 +1,6 @@
-/*
-reverse linked list
-*/
-public class linkedLists{
+public class merge2LinkedListsMyAtt {
 
-	static class Node{
+    static class Node{
 		private int val;
 		private Node next;
 
@@ -17,16 +14,7 @@ public class linkedLists{
 			return next;
 		}
 	}
-
-	public static Node reverseList(Node node){
-		if(node == null || node.next == null) return node;
-		Node p = reverseList(node.next);
-		node.next.next = node;
-		node.next = null; //remove the pointer
-		return p;
-	}
-
-	public static void main(String[] args){
+    public static void main(String[] args){
 		Node n1 = new Node(1);
 		Node n2 = new Node(2);
 		Node n3 = new Node(3);
