@@ -30,7 +30,7 @@ void merge(int *array, int start, int mid, int end){
 	for(i = start; i <= end; i++){
 		array[i] = temp[i - start];
 	}
-	free(temp);
+	delete(temp);
 }
 
 void merge_sort(int* array, int start, int end){
@@ -48,13 +48,13 @@ int main(void){
 	int array[] = {5,1,6,2,-3,0,14};
 	cout << "first array\n";
 	for(int i = 0; i < 7; i++){
-		cout << array[i] << ",";
+		cout << array[i] << " ";
 	}
 	merge_sort(array, 0, 6);
 	cout << "\nsorted array\n";
 	for(int i = 0; i < 7;i++){
-		cout << array[i] << ",";
+		cout << array[i] << " ";
 	}
-	cout << endl;
+	cout << "\n";
 	return 0;	
 }
